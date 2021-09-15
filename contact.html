@@ -29,17 +29,18 @@
   <body>
     <!-- Principal conteneur -->
     <div class="page-container">
-      <!-- bloc-0 -->
-      <div class="bloc bgc-white l-bloc" id="bloc-0">
+      <!-- header -->
+      <header class="bloc bgc-white l-bloc" id="bloc-0">
         <div class="container bloc-sm">
           <nav class="navbar row">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"
-                ><img
+              <a class="navbar-brand" href="index.html">
+                <img
                   src="img/la-chouette-agence.png"
                   alt="logo la chouette agence"
                   height="40"
-              /></a>
+                />
+              </a>
               <button
                 id="nav-toggle"
                 type="button"
@@ -47,9 +48,10 @@
                 data-toggle="collapse"
                 data-target=".navbar-1"
               >
-                <span class="sr-only">Toggle navigation</span
-                ><span class="icon-bar"></span><span class="icon-bar"></span
-                ><span class="icon-bar"></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
             </div>
             <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -61,11 +63,11 @@
             </div>
           </nav>
         </div>
-      </div>
-      <!-- bloc-0 END -->
+      </header>
+      <!-- header END -->
 
-      <!-- bloc-6 -->
-      <div
+      <!-- invitation -->
+      <section
         class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc"
         id="bloc-6"
       >
@@ -82,10 +84,10 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- bloc-6 END -->
+      </section>
+      <!-- invitation END -->
 
-      <!-- bloc-7 -->
+      <!-- formulaire contact -->
       <div class="bloc bgc-white l-bloc" id="bloc-7">
         <div class="container bloc-lg">
           <div class="row">
@@ -147,13 +149,30 @@
                 </button>
               </form>
             </div>
-            <div class="col-sm-6">
-              <p>Ouvert de 9h à 18h, du lundi au vendredi</p>
+            <address class="col-sm-6 text-center">
+              <h2 class="justify-content-center">Nous trouver</h2>
+              <div class="contact">
+                <p>contact@lachouetteagence.com</p>
+                <p>2 place Sathonay 69001 Lyon</p>
+                <p>Ouvert de 9h à 18h, du lundi au vendredi</p>
+              </div>
+            </address>
+
+            <div class="col-sm-6 text-center map-responsive">
+              <iframe
+                title="notre position géographique"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0829506555847!2d4.827978615791163!3d45.76952782103842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1631728147639!5m2!1sfr!2sfr"
+                width="400"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
-      <!-- bloc-7 END -->
+      <!-- formulaire contact END -->
 
       <!-- ScrollToTop Button -->
       <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
@@ -161,8 +180,8 @@
       ></a>
       <!-- ScrollToTop Button END-->
 
-      <!-- Footer - bloc-8 -->
-      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      <!-- Footer -->
+      <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
@@ -215,14 +234,14 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Footer - bloc-8 END -->
+      </footer>
+      <!-- Footer END -->
     </div>
     <!-- Principal conteneur END -->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/blocs.min.js"></script>
-    <script src="./js/jqBootstrapValidation.min.js"></script>
     <script src="./js/formHandler.min.js"></script>
+    <script src="./js/jqBootstrapValidation.min.js"></script>
   </body>
 </html>
